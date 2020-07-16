@@ -16,28 +16,25 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/news/:topicId">
+        <Route path="/news/:topicId">
         <BasicLayout>
             <NewsDetail />
         </BasicLayout>
         </Route>
-        <Route exact path="/news">
+        <Route path="/news">
           <BasicLayout>
             <News />
           </BasicLayout>
         </Route>
-        <Route exact path="/about">
+        <Route path="/about">
         <BasicLayout>
           <About />
         </BasicLayout>
         </Route>
-        <Route exact path="/">
+        <Route path="/">
         <BasicLayout>
           <Home />
         </BasicLayout>
-        </Route>
-        <Route path="/">
-          <h4>404</h4>
         </Route>
       </Switch>
     </Router>
